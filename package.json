@@ -1,0 +1,19 @@
+{
+  "name": "js-run-sandbox",
+  "module": "src/index.js",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "jest": "^29.7.0",
+    "vitest": "^1.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "test:node": "node --test src/__tests__/node.test.js",
+    "test:bun": "bun test ./src/__tests__/bun.test.js",
+    "test:vitest": "vitest run ./src/__tests__/vitest.test.js"
+  },
+  "type": "module",
+  "packageManager": "bun@1.1.12"
+}
